@@ -1,0 +1,116 @@
+.ah-recovery-main {
+  @extend .ah-directory-main;
+  &__container {
+    @include xy-grid-container();
+    text-align: center;
+  }
+  &__title {
+    color: $white;
+    font-size: 78px;
+    @include breakpoint(medium down) {
+      font-size:40px;
+    }
+    letter-spacing: 12.7px;
+    position: relative;
+    &:after {
+      content: '';
+      width: 250px;
+      height: 250px;
+      border: 1px solid $white;
+      transform: translate(-50%, -50%) rotate(45deg);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include breakpoint(medium down) {
+      width: 150px;
+      height: 150px;
+      }
+    }
+  }
+}
+
+//Recent posts section
+.ah-recovery-recent {
+  background-color: #F1F2F2;
+  @extend .ah-homepage-recent;
+  &__container {
+    @include xy-grid-container();
+  }
+  .slick-slide {
+    @include grid-column(4,5px);
+    .ah-recent-slide {
+      text-align:left;
+
+    }
+    img {
+    width:100%;
+    }
+  }
+}
+
+//Related posts section{
+.ah-recovery-related {
+  position: relative;
+  @include clearfix();
+  float:left;
+  width:100%;
+  &__decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 40%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('../images/dot-divider.png') repeat-x;
+    }
+  }
+  &__container {
+    @include xy-grid-container();
+    position: relative;
+  }
+  &__title {
+    color: $brand-primary;
+    letter-spacing: 4.7px;
+    display: inline-block;
+    background: $white;
+    padding: 0 120px 0 40px;
+    margin-bottom:0;
+  }
+  .yarpp-related {
+    @include xy-grid();
+    @include grid-column-margin(15px);
+    @include grid-column(9);
+  }
+  .ah-related {
+    @include grid-column(4);
+    @include breakpoint(medium down) {
+      @include grid-column(12)
+    }
+    //&__grid{
+    //  @include xy-grid();
+    //  @include grid-column(9);
+    //}
+    &__title {
+      @extend .ah-homepage-top__title;
+      min-height: 102px;
+    }
+    &__image-wrapper {
+      @extend .ah-news__image-wrapper;
+    }
+    &__more {
+      display: inline-block;
+      margin: 50px auto 0;
+      &:after {
+        content: 'v';
+        display: inline-block;
+        padding-left: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,388 @@
+//================== Homepage ==================
+.ah-homepage-featured{
+  .featured-image{
+    height:400px;
+    background-size:cover !important;
+    background-position: 0 40%!important;
+    @include breakpoint(medium down){
+      height:300px;
+    }
+    @include breakpoint(small down){
+      height:250px;
+    }
+  }
+}
+.ah-homepage-help {
+  padding: 30px 0 50px;
+    @include breakpoint(medium down) {
+      padding: 30px 0 30px;
+    }
+  &__title {
+    span {
+      color: $brand-primary;
+    }
+  }
+  &__text {
+    max-width: 1090px;
+    margin: 0 auto 70px;
+    font-size: 24px;
+    color:#4d4d4d;
+    line-height: 1.5;
+    @include breakpoint(medium down) {
+      margin: 0 auto 30px;
+    }
+  }
+  .items {
+    @include xy-grid();
+    .item {
+      @include xy-cell(12);
+      margin-bottom:30px;
+
+      @include breakpoint(medium){
+        @include xy-cell(4);
+        margin-bottom:30px;
+      }
+
+      border: 1px solid #9A9A9A;
+      padding-bottom: 70px;
+      &__image {
+        display: block;
+        margin-bottom: 60px;
+        width: 100%;
+        height: auto;
+      }
+      &__title {
+        font: 600 18px/1 $header-font-family;
+        text-transform: uppercase;
+        letter-spacing: 5.7px;
+        color: #333333;
+        font-weight: bold;
+        margin-bottom: 28px;
+      }
+      .ah-readmore{
+        font-size:11px;
+      }
+    }
+  }
+}
+
+//Rehab Section
+.ah-homepage-rehab {
+  //padding: 92px 0;
+  position: relative;
+
+  &__title {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    letter-spacing: 5.7px;
+    position: relative;
+    color:#000;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100vw - 200px);
+      height: 2px;
+      background-color: #9E9E9E;
+    }
+  }
+  &__name {
+    color: $brand-primary;
+    font: 700 18px/1 $header-font-family;
+    text-transform: uppercase;
+    max-width: 814px;
+    margin: 0 auto 10px;
+    text-align: left;
+    @include breakpoint(medium down) {
+      text-align:center;
+      font: 700 18px/1.5 $header-font-family;
+    }
+  }
+  &__subtitle {
+    font-size: 35px;
+    max-width: 900px;
+    margin: 0 auto;
+    letter-spacing: 5.7px;
+  }
+  &__text {
+    margin-bottom: 1rem;
+    p {
+      font-size: 24px;
+      color:#4d4d4d;
+    }
+  }
+  option{
+    font-family: "Raleway", serif;
+  }
+}
+
+//Top-25 Section
+.ah-homepage-top {
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 3.3px;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #9A9A9A;
+    margin-bottom: 16px;
+    @include breakpoint(medium down) {
+      margin-top:16px;
+    }
+  }
+
+  .ah-readmore{
+    font-size:13px;
+    @include breakpoint(medium down) {
+      text-align:center;
+      margin:0 auto;
+    }
+  }
+
+  .ah-homepage-top__posts {
+    .post {
+      @include xy-grid();
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .ah-homepage-top__image {
+        @include xy-cell(4);
+        @include breakpoint(medium down) {
+        @include xy-cell(12);
+        }
+      }
+      .ah-homepage-top__right {
+        @include xy-cell(8);
+         @include breakpoint(medium down) {
+        @include xy-cell(12);
+        }
+      }
+    }
+  }
+}
+
+//Recent posts
+.ah-homepage-recent {
+  &__container{
+    @include xy-grid-container();
+  }
+  .ah-recent-big {
+    @include xy-grid();
+    @include grid-column-margin();
+    &__image {
+
+      
+      @include grid-column(6,0px);
+      @include breakpoint(medium down) {
+        @include grid-column(12);
+      }
+
+      img{
+        width:100%;
+      }
+    }
+    &__text {
+      @include grid-column(6,80px);
+      @include breakpoint(medium down) {
+        @include grid-column(12);
+      }
+    }
+    &__title {
+      @extend .ah-homepage-top__title;
+      font-weight: bold;
+      @include breakpoint(medium down) {
+      margin-top:20px;
+      }
+    }
+  }
+}
+
+.slick-slider {
+
+}
+
+//Recent posts carousel
+.ah-recent-slider {
+  visibility: hidden;
+  transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;
+  &.slick-initialized {
+    visibility: visible;
+    opacity: 1;    
+  }
+  &__wrapper {
+    position: relative;
+  }
+  &__arrow {
+    display: inline-block;
+    width: 39px;
+    height: 76px;
+    position: absolute;
+    top: 30px;
+    &--prev {
+      left: 0;
+      background: url("../images/arrow-prev.png") no-repeat;
+    }
+    &--next {
+      right: 0;
+      background: url("../images/arrow-next.png") no-repeat;
+    }
+  }
+
+  .ah-recent-slide {
+    display: inline-block;
+    padding: 0 10px;
+    &:hover &__title {
+      color: $brand-primary;
+    }
+    &__title {
+      margin-top: 10px;
+      font-size: 11px;
+      left: 1.3px;
+      color: $black;
+      text-transform: uppercase;
+      font-family: Montserrat,sans-serif!important;
+      font-weight: 600!important;
+      color: #4e4e4e!important;
+      text-transform: uppercase!important;
+      letter-spacing: 2px!important;
+      margin:10px 0 0 0;
+      padding-bottom: 0!important;
+      padding-left:12px;
+      padding-right:12px;
+    }
+    img{
+      width:100%;
+    }
+  }
+}
+
+//News Section
+.ah-homepage-news {
+  
+  &__title {
+    color: $brand-primary;
+    font-size:29px;
+    @include breakpoint(medium down) {
+      @include xy-cell(12);
+    }
+  }
+  .ah-news {
+    &__title {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 20px;
+      color:#4d4d4d;
+      min-height: 55px;
+    }
+    &__underline{
+      width:85%;
+      float:left;
+      margin-top: 0;
+    }
+    &__image-wrapper {
+      margin-bottom: 16px;
+      img {
+        width: 100%;
+      }
+    }
+    &__excerpt{
+      color:#4d4d4d;
+    }
+  }
+
+  .ah-homepage-news__posts {
+
+    @include xy-grid();
+
+    .ah-homepage-news__post {
+      position: relative;
+      padding-bottom: 2em;
+      @include breakpoint(medium down) {
+        margin-bottom:20px;
+      }
+      @include xy-cell(12);
+      @include breakpoint(medium) {
+        @include xy-cell(4);
+      }
+    }
+  }
+
+  .ah-readmore--bordered{
+    border-top:none;
+    border-bottom: none;
+    margin:0 auto;
+    margin-top:3em;
+    padding: 1em 1em;
+    max-width: min-content;
+  }
+
+  .ah-readmore{
+    margin-top:30px;
+    position:absolute;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+//Addiction&Recovery Section
+.ah-homepage-add-rec {
+  &__title {
+    color: $brand-primary;
+  }
+
+  .ah-homepage-add-rec__posts {
+    @include xy-grid();
+
+    .ah-homepage-add-rec__post {
+      @include xy-cell(12);
+      @include breakpoint(medium) {
+        @include xy-cell(4);
+      }
+    }
+  }
+  .ah-add-rec__image-wrapper{
+    img{
+      width: 100%;
+    }
+  }
+  .ah-readmore--bordered{
+    display: none;
+  }
+}
+
+//Contact Section
+.ah-homepage-contact {
+  background-size: cover;
+  &__title {
+    @extend .ah-homepage-rehab__title;
+    margin-bottom:.5em;
+    padding-bottom:.5em;
+    span {
+      color: $brand-primary;
+    }
+    &:after{
+      width: calc(100vw - 910px);
+    }
+  }
+  &__text {
+    max-width: 900px;
+    p{
+      color:#4d4d4d;
+    }
+  }
+  &__link {
+    @extend .ah-readmore;
+    @extend .ah-readmore--bordered;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 15px;
+    max-width: none;
+    margin-top:2em;
+
+  }
+}

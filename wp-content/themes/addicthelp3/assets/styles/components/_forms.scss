@@ -1,0 +1,17 @@
+// Search form
+.search-form {
+
+}
+.search-form label {
+  font-weight: normal;
+}
+.search-form .search-field {
+}
+.search-form .search-submit {
+  @extend .button;
+}
+.search-form-404{
+      margin-left: auto;
+      order: -1;
+      margin-bottom: 20px;
+ }

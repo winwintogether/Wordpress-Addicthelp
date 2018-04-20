@@ -1,0 +1,322 @@
+.ah-directory-main {
+  background: #55fffa no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 200px 0;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-size: cover;
+    background: url('../images/image-overlay.png') no-repeat top right;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__container {
+    @include xy-grid-container();
+  }
+
+  &__title {
+    color: white;
+    position: relative;
+    padding-bottom: 5px;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 42px;
+      height: 4px;
+      background-color: $brand-primary;
+    }
+  }
+}
+
+.ah-directory-subscribe {
+  padding: 30px 0 30px 0;
+  &__container {
+    @include xy-grid-container();
+  }
+
+  form {
+    font-family: $font-family-montserrat;
+
+    input[type='text'],input[type='email'] {
+      font-size: 10px;
+      color: rgb(1, 1, 1);
+      display: block;
+      &::placeholder {
+        color: rgb(25, 25, 25);
+        opacity: 1;
+        text-transform: uppercase;
+      }
+    }
+
+    button {
+      display: block;
+      background: #333333;
+      font-size: 10px;
+      text-transform: uppercase;
+      height: 1.625rem;
+      margin: 0;
+      padding: .3333333333rem;
+      color: white;
+      width: 100%;
+      &:hover {
+        background: #404040;
+        cursor: pointer;
+      }
+    }
+    & > div {
+      @include xy-grid();
+      & > div {
+        @include xy-cell();
+      }
+      .ah-directory-subscribe__text {
+        color: $brand-primary;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight:600;
+
+        @include breakpoint('medium') {
+          @include xy-cell(2);
+        }
+      }
+      .ah-directory-subscribe__name {
+        @include breakpoint('medium') {
+          @include xy-cell(4);
+        }
+      }
+      .ah-directory-subscribe__email {
+        @include breakpoint('medium') {
+          @include xy-cell(4);
+        }
+      }
+      .ah-directory-subscribe__button {
+        @include breakpoint('medium') {
+          @include xy-cell(2);
+        }
+      }
+    }
+  }
+}
+
+.ah-directory-roadmap {
+  padding-top: 40px;
+  h1 {
+    color: #414042;
+  }
+  .ah-directory-roadmap__text {
+    font-family: $font-family-releway;
+    color: #6d6e71;
+    .ah-text-first-decorated {
+      &::first-letter {
+        font-size: 200%;
+        color: $brand-primary;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.ah-directory-search {
+  //padding: 92px 0;
+  position: relative;
+
+  &__container {
+    @include xy-grid-container();
+  }
+
+  &__subtitle {
+    max-width: 900px;
+    margin: 0 auto;
+    color: $brand-primary;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    font: 700 18px/1 $header-font-family;
+    letter-spacing: 3px;
+    color: $brand-primary;
+    text-transform: uppercase;
+    line-height: 40px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100vw - 200px);
+      height: 2px;
+      background-color: #9E9E9E;
+    }
+  }
+
+  &__title {
+
+    letter-spacing: 5.7px;
+    margin-bottom: 0;
+    color: #414042;
+
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+    p {
+      font-size: 24px;
+      margin-bottom: 3rem;
+      color: #414042;
+
+    }
+  }
+}
+
+//top post section
+.ah-directory-top {
+  color: #4e4e4e;
+  &__items {
+    @include xy-grid-container();
+  }
+
+  &__item {
+    @include xy-grid();
+    margin-bottom: 30px;
+    &_image {
+      @include xy-cell(6);
+      @include breakpoint('medium') {
+        @include xy-cell(4);
+      }
+    }
+    &_description {
+      @include xy-cell(6);
+      @include breakpoint('medium') {
+        @include xy-cell(8);
+      }
+    }
+    .ah-readmore {
+      padding: 10px 0;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 3.3px;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #9a9a9a;
+    margin-bottom: 16px;
+  }
+}
+
+.ah-directory-news {
+  position: relative;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: calc(100vw - 200px);
+    height: 2px;
+    background-color: #d1d3d4;
+  }
+  &:after {
+    top: auto;
+    bottom: 0;
+  }
+
+  h1 {
+    color: $brand-primary;
+    font-size: 29px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+
+  &__container {
+    @include xy-grid-container();
+  }
+
+  &__items {
+
+    @include xy-grid();
+
+    margin: 0 -10px;
+  }
+
+  &__item {
+    @include xy-cell(6);
+    @include breakpoint('small') {
+      @include xy-cell(6);
+      &:nth-child(n+3) {
+        display: none;
+      }
+    }
+    @include breakpoint('medium') {
+      @include xy-cell(4);
+      &:nth-child(n+1) {
+        display: block;
+      }
+    }
+
+    margin-bottom: 15px;
+    hr {
+      background: #d1d3d4;
+      height: 1px;
+      width: 80%;
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-family: $font-family-montserrat;
+      font-weight: 600;
+      color: rgb(78, 78, 78);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 24px;
+      font-family: $body-font-family;
+      color: rgb(78, 78, 78);
+      font-style: italic;
+      margin: 15px 0;
+    }
+    .ah-readmore {
+      margin: 10px auto 0;
+    }
+  }
+}
+
+.ah-directory-advert {
+  .ah-directory-advert__container {
+    @include xy-grid-container();
+  }
+
+  h2 {
+    color: $brand-primary;
+    font-size: 29px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+
+  .ah-directory-advert__block {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+.ah-footer {
+  .ah-footer-container {
+    &__logo-container {
+      padding: 20px 0;
+      &.with-divider {
+        border-bottom: 1px solid #CDCCCC;
+        -webkit-box-shadow: 0px 1px 0px 0px rgba(102, 102, 102, 0.25);
+        -moz-box-shadow: 0px 1px 0px 0px rgba(102, 102, 102, 0.25);
+        box-shadow: 0px 1px 0px 0px rgba(102, 102, 102, 0.25);
+      }
+      img {
+        max-width: 120px;
+      }
+    }
+    &__social-button-item {
+      width: 30px;
+      height: 30px;
+      background-size: contain !important;
+      display: block;
+      background-repeat: no-repeat;
+      background-color: transparent!important;
+      @include breakpoint(medium) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &__social-button-container {
+      padding: 10px 0;
+      @include breakpoint(medium) {
+        padding: 10px 20px;
+      }
+
+    }
+    &__social-button-wrapper {
+      display: flex;
+      justify-content: left;
+      @include breakpoint(medium) {
+        justify-content: center;
+      }
+      position: relative;
+    }
+    &__grid-container {
+      @include xy-grid();
+      margin-top: 100px;
+    }
+    &__item {
+      @include xy-cell(12);
+      @include breakpoint(medium) {
+        @include xy-cell(6);
+      }
+      &--contacts {
+        text-align: center;
+        @include breakpoint(medium) {
+          text-align: left;
+        }
+        a {
+          font-family: $font-family-releway;
+          color: #4d4d4d;
+          font-size:17px;
+          @include breakpoint(medium) {
+            font-size: 0.8rem;
+          }
+        }
+        .divider {
+          display: inline;
+          padding-left: 15px;
+          border-left: 1px solid #666666;
+          margin-left: 15px;
+        }
+        .phone {
+          font-family: $font-family-montserrat;
+          font-size:17px;
+          color: $brand-primary !important;
+          display: inline-block;
+        }
+        .scroll-top-arrow {
+          cursor: pointer;
+        }
+      }
+      &--menu {
+        margin-top: 30px;
+        text-align: center;
+        @include breakpoint(medium) {
+          margin-top: 0;
+          text-align: right;
+        }
+        a, span {
+          font-family: $font-family-montserrat;
+          color: #656565;
+          font-size: 9px;
+        }
+        &--divider {
+          color: $brand-primary !important;
+          margin: 0 10px;
+
+        }
+      }
+    }
+    &__divider {
+      margin: 30px 0 40px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .share-btn {
+    position: absolute;
+    right: 0;
+    padding: 15px 10px;
+
+    @include breakpoint(medium) {
+      padding: 20px 10px;
+    }
+    img {
+      width: 28px;
+      margin-left: 10px;
+    }
+
+    .custom-button{
+      font-family: $font-family-montserrat;
+      color: #666666;
+      font-weight: 600;
+      font-size: 9px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      border:none;
+    }
+
+     .need-share-button_dropdown{
+       left: -100% !important;
+     }
+  }
+
+}
+
+
+

@@ -1,0 +1,451 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Category to Pages WUD\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/category-to-pages-wud\n"
+"POT-Creation-Date: 2016-10-23 17:43:46+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: DANNY WUD <info@wistudat.be>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+
+# Copyright (C) 2017 Category to Pages WUD
+# This file is distributed under the same license as the Category to Pages WUD package.
+
+#: pages/c2p-wud-admin.php:192
+msgid "No pages descriptions with URL's are displayed."
+msgstr ""
+
+#: pages/c2p-wud-admin.php:225
+msgid "Category to Page WUD does not force the hidden Hatom data."
+msgstr ""
+
+#: pages/c2p-wud-admin.php:225
+msgid "Hatom data = post/page title, date last updated and author vcard"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:225
+msgid "It wil display (in hidden format) Hatom data to Google"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:225
+msgid "Hatom: Fixes errors in Google Webmaster Tools"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:219
+msgid "A page URL name contains the hardcoded category and is not Editable."
+msgstr ""
+
+#: pages/c2p-wud-admin.php:219
+msgid "You can edit the page URL (WordPress standard)"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:219
+msgid "When Categories/Tags are not unique and WordPress permalink  is set to: /%category%/%postname%/"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:211
+msgid "Excerpts are only available for posts (WordPress standard)."
+msgstr ""
+
+#: pages/c2p-wud-admin.php:211
+msgid "Unique excerpts are available for pages and posts"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:201
+msgid "It shows the parent and child (sub) categories pages together."
+msgstr ""
+
+#: pages/c2p-wud-admin.php:201
+msgid "It shows the parent categories pages only"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:195
+msgid "A button will appear to show the pages descriptions with URL's."
+msgstr ""
+
+#: pages/c2p-wud-admin.php:192
+msgid "A list from maximum 5 page descriptions with URL's are displayed per Category and/or Tag"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:186
+msgid "categories / tags are no longer usable / visible!"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:186
+msgid "unique"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:186
+msgid "If you disable this feature, the"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:184
+msgid "Page categories and tags are the same as they are for posts."
+msgstr ""
+
+#: pages/c2p-wud-admin.php:184
+msgid "Categories and tags are unique for pages"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:154
+msgid "Depending the Theme you are using, you can choose here where to place the Categories and Tags."
+msgstr ""
+
+#: pages/c2p-wud-admin.php:154
+msgid "Show the categories and tags, just BELOW the Page Title or on TOP of your Page Content"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:148
+msgid "Tags"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:142 pages/c2p-wud-admin.php:148
+msgid "are only available for posts (WordPress standard)."
+msgstr ""
+
+#: pages/c2p-wud-admin.php:142 pages/c2p-wud-admin.php:148
+#: pages/c2p-wud-admin.php:184 pages/c2p-wud-admin.php:192
+#: pages/c2p-wud-admin.php:201 pages/c2p-wud-admin.php:211
+#: pages/c2p-wud-admin.php:219 pages/c2p-wud-admin.php:225
+msgid "If not activated"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:142 pages/c2p-wud-admin.php:148
+msgid "are available for posts and pages"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:142
+msgid "Categories"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:142 pages/c2p-wud-admin.php:148
+#: pages/c2p-wud-admin.php:184 pages/c2p-wud-admin.php:192
+#: pages/c2p-wud-admin.php:195 pages/c2p-wud-admin.php:201
+#: pages/c2p-wud-admin.php:211 pages/c2p-wud-admin.php:219
+#: pages/c2p-wud-admin.php:225
+msgid "If activated"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:136
+msgid "Please notice that all the settings on this page are related to the Wordpress pages and not to Wordpress posts!"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:135
+msgid "Displays all related posts"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:135
+msgid "[wudrelated type=\"post\"]"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:135
+msgid "Displays all related pages"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:134
+msgid "Displays maximum 5 related post and/or pages"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:133
+msgid "Displays all related post and/or pages"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:132
+msgid "Displays tags as drop down"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:132
+msgid "Displays categories as drop down"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:131
+msgid "Displays tags as list"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:131
+msgid "Displays categories as list"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:130
+msgid "Shortcodes to use in a post/page or widtget!"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:14
+msgid "Any question? Click here: FREE SUPPORT"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:17
+msgid "IMPORTANT: Plugin activation sets all settings to the default values."
+msgstr ""
+
+#. Tags of the plugin/theme
+msgid "category pages, categories page, category page, categories pages, category to page, page category, hatom, related post, page excerpts"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:206
+msgid "Related Post Description"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:220
+msgid "Disable 'Page category/tag' in the URL"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Add Easily Page Categories and Page Tags."
+msgstr ""
+
+#: pages/c2p-wud-admin.php:227
+msgid "Read more @ Google"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:226
+msgid "Enable Page & Post Hatom data for Google"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:13
+msgid "Adds easily Categories and Tags to Pages!"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:214
+msgid "Excerpt length in words (max.: 150)"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:212
+msgid "Use excerpts for pages"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:205
+msgid "Page Tag Description"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:204
+msgid "Page Category Description"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:202
+msgid "Show only Parent Categories"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Danny WUD"
+msgstr "Danny WUD"
+
+#. #-#-#-#-#  category-to-pages-wud-code.pot (Category to Pages WUD 2.3.3) 
+#. #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  category-to-pages-wud-code.pot (Category to Pages WUD 2.3.3) 
+#. #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://wud-plugins.com"
+msgstr "https://wud-plugins.com"
+
+#. Plugin Name of the plugin/theme
+msgid "Category to Pages WUD"
+msgstr "Category to Pages WUD"
+
+#: pages/c2p-wud-widgets.php:79
+msgid "Page Tagg Title"
+msgstr ""
+
+#: pages/c2p-wud-widgets.php:76
+msgid "Show Page Tags"
+msgstr ""
+
+#: pages/c2p-wud-widgets.php:65 pages/c2p-wud-widgets.php:82
+msgid "CCS Font Title"
+msgstr ""
+
+#: pages/c2p-wud-widgets.php:62
+msgid "Page Category Title"
+msgstr ""
+
+#: pages/c2p-wud-widgets.php:59
+msgid "Show Page Categories"
+msgstr ""
+
+#: pages/c2p-wud-widgets.php:54
+msgid "Widget Title"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:145
+msgid "Page Tags"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:144
+msgid "Choose from the most used Page Tags"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:143
+msgid "Add or remove Page Tags"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:142
+msgid "Separate Page Tags with commas"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:141
+msgid "New Page Tag Name"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:140
+msgid "Add New Page Tag"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:139
+msgid "Update Page Tag"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:138
+msgid "Edit Page Tag"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:135
+msgid "All Page Tags"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:134
+msgid "Popular Page Tags"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:133
+msgid "Search Page Tags"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:132
+msgctxt "taxonomy singular name"
+msgid "Tag"
+msgstr "Label"
+
+#: pages/c2p-wud-reg-terms.php:131
+msgctxt "taxonomy general name"
+msgid "Page Tags"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:107
+msgid "Page Categories"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:106
+msgid "New Page Category Name"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:105
+msgid "Add New Page Category"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:104
+msgid "Update Page Category"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:103
+msgid "Edit Page Category"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:102
+msgid "Parent Page Category:"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:101
+msgid "Parent Page Category"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:100
+msgid "All Page Categories"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:99
+msgid "Search Page Categories"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:98
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr ""
+
+#: pages/c2p-wud-reg-terms.php:97
+msgctxt "taxonomy general name"
+msgid "Page Categories"
+msgstr ""
+
+#: category-to-pages-wud.php:147
+msgid "Settings"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:235
+msgid "Contact"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:234
+msgid "Get FREE Support"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:234
+msgid "Visit our website"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:232
+msgid "Save Changes"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:200
+msgid "Quantity pages to display (max.: 50)"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:196
+msgid "Show a button to display the pages"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:193
+msgid "Show Category and Tag pages"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:191
+msgid "Category to Pages"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:191
+msgid "Widget"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:156 pages/c2p-wud-admin.php:185
+msgid "Activate"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:183
+msgid "page categories/tags"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:183
+msgid "Unique"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:165
+msgid "Font Family"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:164
+msgid "Font size"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:153
+msgid "Show the Category/Tag Title on the Page."
+msgstr ""
+
+#: pages/c2p-wud-admin.php:149
+msgid "Add Tags to pages"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:143
+msgid "Add Categories to pages"
+msgstr ""
+
+#: pages/c2p-wud-admin.php:84
+msgid "Busy to save the settings ... one moment please."
+msgstr ""
+
+#: pages/c2p-wud-admin.php:14
+msgid "100% FREE PRO SUPPORT"
+msgstr ""

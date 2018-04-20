@@ -1,0 +1,206 @@
+.search-submit {
+  @include button;
+}
+
+.big-ad {
+  text-align:center;
+}
+
+.widget {
+  ul {
+    list-style: none;
+    margin-left: 0;
+  }
+}
+
+.widget_text {
+  h3 {
+    display:none;
+  }
+}
+
+.sidebar {
+  @include xy-cell(12);
+
+  @include breakpoint(medium) {
+    @include xy-cell(4);
+  }
+
+  margin-top: 20px;
+  .widget {
+    margin: 20px 0;
+  }
+  
+  .dropdown-cities {
+    border: 1px solid #666666;
+    h3 {
+      display:block!important;
+    }
+   .find-button {
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: .7em;
+      letter-spacing: 2px;
+      color: #666666;
+      padding: 10px;
+      margin-bottom: 0;
+      font-family: $font-family-montserrat;
+      margin-left:15px;
+    }
+
+   ul{
+    display:none;
+    border-top: 1px solid #666666;
+    padding: 20px;
+    font-size: .8em;
+    font-family: $font-family-montserrat;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #666666;
+    margin-bottom:0;
+    p {
+      padding:0;
+      margin:0;
+    }
+    a {
+       color: #666666;
+          text-align: left;
+          max-width: 80%;
+          word-break: break-all;
+      li {
+         font-size: .8em;
+        text-align: right;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        h2 {
+        font-size: .8em;
+        }
+      }
+    }
+  }
+}
+  .widget_categories {
+    border: 1px solid #666666;
+
+    h3 {
+      text-align: center;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: .9em;
+      letter-spacing: 2px;
+      color: #666666;
+      border-bottom: 1px solid #666666;
+      padding: 10px;
+      margin-bottom: 0;
+    }
+    ul {
+      padding: 20px;
+      font-size: .8em;
+      font-family: $font-family-montserrat;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #666666;
+      li {
+        font-size: .8em;
+        text-align: right;
+        padding: 10px;
+        border-bottom: 1px solid #cccccc;
+        display: flex;
+        justify-content: space-between;
+        a {
+          color: #666666;
+          text-align: left;
+          max-width: 80%;
+          word-break: break-all;
+          &:hover {
+            color: $brand-primary;
+          }
+        }
+      }
+    }
+  }
+
+  .widget_news_posts_widget {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+    .accordion-item.is-active {
+      .ah-widget-news__arrow-item {
+        transform: rotate(90deg);
+      }
+    }
+    .accordion-item{
+      border-bottom:1px solid white;
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+
+  }
+  .ah-widget-news {
+    &__title h3, &__sub-title h4, &__arrow {
+      text-transform: uppercase;
+      font-family: Montserrat, sans-serif;
+      font-size: .9em;
+      @include breakpoint(medium down) {
+        font-size: .7em;
+      }
+      font-weight: 900;
+      letter-spacing: 4px;
+      padding: 10px;
+      color: #ffffff;
+      margin: 0;
+    }
+    &__title, &__sub-title {
+      display: flex;
+    }
+    &__title {
+      background-color: #404040;
+      padding:10px;
+    }
+    &__sub-title {
+      background-color: $brand-primary;
+      padding:10px;
+    }
+    &__posts {
+      padding: 20px 0;
+    }
+    &__post {
+      @include xy_grid();
+      margin-bottom: 20px;
+    }
+    &__image-wrapper {
+      @include xy_cell(4);
+    }
+    &__content {
+      @include xy_cell(8);
+      a {
+        font-size: .8em;
+        font-family: $font-family-montserrat;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #666666;
+        &:hover {
+          color: $brand-primary;
+        }
+        h4 {
+          margin-bottom: 5px;
+          font-size: 0.8em;
+          font-weight: 900;
+          letter-spacing: 2px;
+        }
+      }
+    }
+    &__excerpt {
+      font-size: 0.8em;
+    }
+    &__arrow-item {
+      transition: 0.5s;
+    }
+    &__arrow{
+      margin-left: auto;
+    }
+  }
+}

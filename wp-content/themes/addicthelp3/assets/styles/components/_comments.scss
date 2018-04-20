@@ -1,0 +1,154 @@
+.comment-list {
+  list-style: none;
+}
+
+.comment-list ol {
+  list-style: none;
+}
+
+.comment-form p {
+  // @extend .form-group;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"],
+.comment-form textarea {
+  // @extend .form-control;
+}
+
+.comment-form input[type="submit"] {
+  @extend .button;
+  // @extend .btn-primary;
+}
+
+.comments {
+  @include xy-grid-container();
+  &__title {
+    font-family: $font-family-releway;
+    position: relative;
+    margin-bottom: 25px;
+    h4 {
+      display: inline-block;
+      padding-left: 35px;
+    }
+    &:before {
+      content: '';
+      height: 28px;
+      width: 28px;
+      position: absolute;
+      background: url(../images/dialogue.jpg) no-repeat 50% 50%;
+      background-size: contain;
+      margin-right: 55px;
+    }
+  }
+  &__container {
+    @include xy-grid();
+  }
+
+  &__avatar {
+    @include xy-cell(2,0);
+    img{
+      max-width: 64px;
+    }
+  }
+
+  &__form {
+    @include xy-cell(12);
+  }
+
+  &__user-name {
+    font-family: $font-family-releway;
+    color: $brand-primary;
+    margin-bottom: 10px;
+  }
+
+  .comment-form-comment {
+    width: 100%;
+    margin-bottom: 10px;
+    textarea {
+      margin-bottom: 10px;
+    }
+  }
+  .comment-reply-title {
+    display: none;
+  }
+  .comment-notes, label {
+    color: #6d6e71;
+    font-size: 16px;
+    font-style: normal;
+    font-family: $font-family-releway;
+  }
+  .form-submit {
+    text-align: right;
+    input {
+      background: none;
+      color: #6d6e71;
+      font-size: 16px;
+      font-style: normal;
+      font-family: $font-family-releway;
+      &:hover {
+        background: none;
+        color: $brand-primary;
+      }
+    }
+  }
+  .comment-list {
+    @include xy-cell(12,0);
+    article {
+      margin-bottom: 30px;
+    }
+    .comment-content {
+      border-bottom: 1px solid #6d6e71;
+      margin-top: 20px;
+      font-size: 1.05em;
+      p {
+        font-family: $font-family-releway;
+      }
+    }
+    .comment-metadata {
+      font-family: $font-family-releway;
+      display: inline;
+      font-size: .8em;
+      a {
+        color: #6d6e71 !important;
+      }
+      time{
+        white-space: nowrap;
+      }
+    }
+    span.says{
+      display: none;
+    }
+    img.avatar {
+      @include xy-cell(2,0);
+    }
+    .comment-author {
+      display: inline;
+      b {
+        font-family: $font-family-releway;
+        color: $brand-primary;
+        margin-bottom: 10px;
+        font-size: 0.8em;
+      }
+      img{
+        max-width: 64px;
+      }
+    }
+    .reply {
+      font-family: $font-family-releway;
+      font-size: 0.8em;
+      text-align: right;
+      .comment-reply-link {
+        color: #6d6e71;
+      }
+    }
+    .edit-link{
+      float: right;
+      font-size: .7em;
+      @include breakpoint(medium) {
+        font-size: .8em;
+      }
+    }
+  }
+}

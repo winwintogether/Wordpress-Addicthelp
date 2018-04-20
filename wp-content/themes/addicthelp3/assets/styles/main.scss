@@ -1,0 +1,52 @@
+//Fonts
+@font-face {
+  font-family: 'Bodoni';
+  src: url('../fonts/BodoniSvtyTwoITCTT-BookIta.eot');
+  src: url('../fonts/BodoniSvtyTwoITCTT-BookIta.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BodoniSvtyTwoITCTT-BookIta.woff2') format('woff2'),
+  url('../fonts/BodoniSvtyTwoITCTT-BookIta.woff') format('woff'),
+  url('../fonts/BodoniSvtyTwoITCTT-BookIta.ttf') format('truetype'),
+  url('../fonts/BodoniSvtyTwoITCTT-BookIta.svg#BodoniSvtyTwoITCTT-BookIta') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'social-icons';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/social.eot?44259375');
+  src: url('../fonts/social.eot?44259375#iefix') format('embedded-opentype'), 
+       url('../fonts/social.woff?44259375') format('woff'), 
+       url('../fonts/social.ttf?44259375') format('truetype'), 
+       url('../fonts/social.svg?44259375#social') format('svg');
+}
+
+@import "common/_variables";
+@import "settings/_settings";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/foundation-sites/scss/foundation.scss";
+@import "../../bower_components/slick-carousel/slick/slick-theme.scss";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+// endbower
+
+@include foundation-everything;
+
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+
+@import "common/global";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/grid";
+@import "components/wp-classes";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/single";
+@import "layouts/tinymce";
+

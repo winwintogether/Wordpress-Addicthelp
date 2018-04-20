@@ -1,0 +1,26 @@
+.ajax-loading{
+  display: none;
+  margin-bottom: 1px;
+  .circleG{
+    background-color:rgb(241, 120, 96);
+    float:left;
+    height:10px;
+    width:10px;
+    margin-left:5px;
+    @include  animation-name(bounce_circleG);
+    @include animation-duration(0.8775s);
+    @include animation-iteration-count(infinite);
+    @include animation-direction(normal);
+    @include border-radius(5px);
+  }
+
+  .circleG_1{ @include animation-delay(0.1795s);}
+  .circleG_2{ @include animation-delay(0.4055s);}
+  .circleG_3{ @include animation-delay(0.5285s); }
+  @keyframes bounce_circleG{ 0%{} 50%{ background-color:rgba(241, 120, 96,0.2);} 100%{} }
+  @-o-keyframes bounce_circleG{ 0%{} 50%{ background-color:rgba(241, 120, 96,0.2);} 100%{} }
+  @-ms-keyframes bounce_circleG{ 0%{} 50%{ background-color:rgba(241, 120, 96,0.2);} 100%{} }
+  @-webkit-keyframes bounce_circleG{ 0%{} 50%{ background-color:rgba(241, 120, 96,0.2);} 100%{} }
+  @-moz-keyframes bounce_circleG{ 0%{} 50%{ background-color:rgba(241, 120, 96,0.2); } 100%{} } }
+
+

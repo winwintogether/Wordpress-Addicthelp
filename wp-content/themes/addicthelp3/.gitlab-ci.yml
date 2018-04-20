@@ -1,0 +1,49 @@
+## Environemnt Variables
+## WP_CONTENT_DIR = full path to wp-content directory (no trailing slash)
+## THEME_FOLDER =  no pre slash, add ending slash
+## SSH_USER = ssh user for the key
+## SSH_KEY = private key for deployment
+
+image: andthensome/docker-node-rsync
+
+cache:
+  paths:
+   - node_modules/
+
+stages:
+  - build_theme
+  - production
+
+build_theme:
+  before_script:
+    - npm install -g gulp
+    - npm install -g bower
+    - npm install
+  stage: build_theme
+  only:
+   - develop
+  script:
+   - bower install --allow-root
+   - gulp --production --allow-root
+
+deploy_production:
+  before_script:
+    - npm install -g gulp
+    - npm install -g bower
+    - npm install
+    - bower install --allow-root
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - mkdir -p ~/.ssh
+    - eval $(ssh-agent -s)
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n  StrictHostKeyChecking no\n" > ~/.ssh/config'
+    - ssh-add <(echo "$SSH_KEY")
+    - apt-get install rsync
+  stage: production
+  script:
+    - gulp --production --allow-root
+    - ssh -p22 $SSH_USER@$DOMAIN "mkdir -p $WP_CONTENT_DIR/_tmp"
+    - rsync -rav -e ssh --exclude-from 'exclude-list.txt' --delete-excluded ./ $SSH_USER@$DOMAIN:$WP_CONTENT_DIR/themes/_tmp
+    - ssh -p22 $SSH_USER@$DOMAIN "mv $WP_CONTENT_DIR/themes/$THEME_FOLDER $WP_CONTENT_DIR/themes/_old && mv $WP_CONTENT_DIR/themes/_tmp $WP_CONTENT_DIR/themes/$THEME_FOLDER"
+    - ssh -p22 $SSH_USER@$DOMAIN "rm -rf $WP_CONTENT_DIR/themes/_old"
+  only:
+   - master
